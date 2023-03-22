@@ -1,0 +1,648 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+:root{
+    --maincolor:#7873E2;
+}
+nav{
+    width: 100%;
+    height: 70px;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: baseline;
+}
+nav h1{
+    padding-left: 60px;
+    font-size: 2em;
+    color: white;
+}
+/* nav .nav-bar{
+    margin-right: 40px;
+} */
+nav .nav-bar ul{
+      display: flex;
+      list-style: none;
+
+}
+nav .nav-bar ul li{
+    margin-left: 40px;
+}
+nav .nav-bar ul li a{
+    /* margin-left: 40px; */
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+}
+
+nav .nav-bar ul li:hover{
+    border-bottom: 2px solid white;
+}
+nav .nav-contact button{
+    width: 130px;
+    height: 40px;
+    margin-right:60px ;
+    background-color: var(--maincolor);
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    line-height: 40px;
+}
+section{
+    width: 100%;
+    height: 100vh; 
+}
+.header{
+    
+    background:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url('../img/back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* position: relative; */
+}
+.banner{
+    display: flex;
+}
+.banner .col1{
+    width: 50vw;
+    margin: 100px 70px;
+}
+.banner .col1 h1{
+    font-size: 3em;
+    color: white;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+.banner .col1 p{
+    font-size: 1em;
+    color: #91949D;
+    margin-top: 10px;
+}
+.banner .col1 .adm-btn button{
+    width: 200px;
+    height: 50px;
+    background-color: var(--maincolor);
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1em;
+    text-transform: uppercase;
+    line-height: 50px;
+    margin-top: 20px;
+}
+.banner .col2{
+    width: 50vw;
+    margin: 50px 30px;
+}
+.banner .col2 .sign-form{
+    width: 450px;
+    height: 400px;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 30px;
+    padding: 40px 50px;
+}
+.banner .col2 .sign-form input{
+    margin-top: 15px;
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    line-height: 40px;
+    border: 1px solid #91949D;
+    outline: none;
+    border-radius: 5px;
+    
+}
+.banner .col2 .sign-form input::placeholder{
+    text-transform: capitalize;
+    font-weight: 300;
+}
+.banner .col2 .sign-form h1{
+    font-size: 2em;
+    color: black;
+    font-weight: 300;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+.banner .col2 .sign-form .signup-btn button{
+    width: 130px;
+    height: 50px;
+    background-color: var(--maincolor);
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1em;
+    text-transform: uppercase;
+    line-height: 50px;
+    margin-top: 20px;
+}
+/**************************courses*****************/
+.courses{
+    position: relative;
+    height: 110vh;
+}
+.courses .cour-ban .col1{
+    width: 100%;
+    height: 40vh;
+    background-color: var(--maincolor);
+
+}
+.courses .cour-ban .col1 h1{
+    font-size: 3em;
+    color: white;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    text-align: center;
+
+}
+
+.courses .col2 .boxs{
+    position: absolute;
+    top: 130px;
+    display: flex;
+    justify-content: center;
+    padding: 0px 120px;
+    column-gap: 20px;
+}
+.courses .col2 .box{
+    width: 350px;
+    height: 400px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.courses .col2 .box .lesson-p{
+    margin: 10px;
+    padding: 5px 5px;
+    
+}
+.courses .col2 .box .lesson-p p{
+     font-size: 1em; 
+     color:#9B9B9B;
+}
+.courses .col2 .box .lesson-p h5{
+    font-size: 2em;
+    color: var(--maincolor);
+    margin: 3px 0px;
+    text-transform: capitalize;
+    font-weight: 200;
+}
+.courses .col2 .box .cour{
+    display: flex;
+    list-style: none;
+    height: 34px;
+    line-height: 34px;
+
+    
+}
+.courses .col2 .box .lis{
+     width:80% ;
+     border: 1px solid white;
+     float: left;
+     padding-left: 10px;
+     font-size: 1em; 
+     color:#9B9B9B;
+}
+.courses .col2 .box .lis2{
+    width: 20%;
+    border: 1px solid white;
+    border-left: none;
+    text-align: center;
+    font-size: 1em; 
+     color:#9B9B9B;
+}
+.courses .col2 .mov-btn{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 80px;
+    justify-content: center;
+    left: 560px;
+    column-gap: 20px;
+}
+.courses .col2 .mov-btn button{
+    width: 100px;
+    height: 40px;
+    background-color: var(--maincolor);
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1em;
+    text-transform: uppercase;
+    line-height: 40px;
+}
+.programs{
+    width: 100%;
+    height: 300vh;
+}
+.programs .col1{
+    width: 100%;
+    height: 40vh;
+    padding: 25px 300px;
+
+}
+.programs .col1 h1{
+    font-size: 3em;
+    color: black;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.programs .col1 p{
+    font-size: 1em;
+    color: #91949D;
+    margin-top: 10px;
+    text-align: center;
+}
+.programs .col2{
+    width: 100%;
+    height: 86vh;
+    display: flex;
+    padding-top: 30px;
+}
+.programs .col2 .row1,.row3,.row5{
+     width: 50vw;
+     margin: 20px 100px;
+}
+.programs .col2 .row2,.row4,.row6{
+    width: 50vw;
+    margin: 20px 100px;
+
+
+}
+.programs .col2 .row2 h2,.row3 h2,.row6 h2{
+    font-weight: 400;
+    font-size: 2em;
+    padding-top: 10px;
+    padding-left: 10px;
+
+}
+.programs .col2 .row2 p,.row3 p,.row6 p{
+    font-size: 16px;
+    color: #91949D;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-left: 5px;
+    
+}
+.programs .col2 .row2 .pro p,.row3 .pro p,.row6 .pro p{
+    text-transform: capitalize;
+    font-size: 1em;
+    color: var(--maincolor);
+    padding-top: 5px;
+    padding-left: 10px;
+}
+.programs .col2 .row1 img ,.row4 img,.row5 img{
+    width: 100%;
+    height: auto;
+ 
+}
+.teachers{
+    width: 100%;
+    height: 310vh;
+}
+.teachers .col1{
+    width: 100%;
+    height: 30vh;
+    padding: 20px 300px;
+
+}
+.teachers .col3{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url('../img/back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 240px;
+}
+.teachers .col3 .cen-img{
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+
+}
+.teachers .col3 h4{
+    margin:15px 0px;
+    font-weight: 200;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+.teachers .col3 p{
+
+    line-height: 30px;
+    font-size: 16px;
+}
+.teachers .col3 .cen-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-position: center;
+    object-fit: cover;
+    
+}
+.teachers .col2,.col4{
+    width: 100%;
+    height: 80vh;
+
+}
+.teachers .col1 h1{
+    font-size: 3em;
+    color: black;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.teachers .col1 p{
+    font-size: 1em;
+    color: #91949D;
+    margin-top: 10px;
+    text-align: center;
+}
+.teachers .col4{
+    padding:10px;
+}
+.teachers .col2{
+    display: flex;
+    /* padding: 10px; */
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.teachers .col2 .log{
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      
+}
+.teachers .col2 .log img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    
+}
+.teachers .col2 .box{
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 30px;
+    border: 1px solid #c3c5c9;
+    
+}
+.teachers .col2 .box h6{
+    text-transform: capitalize;
+    margin-top: 15px;
+}
+.teachers .col2 .box p{
+    font-size: 14px;
+    text-align: center;
+    margin-top: 15px;
+    color: #666768;
+
+}
+.teachers .col2 .box #sub{
+    color: #91949D;
+    font-size: 1em;
+}
+
+.teachers .col4 h1{
+    font-size: 3em;
+    color: black;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    text-align: center; 
+}
+
+.teachers .col{
+    display: flex;
+    padding: 20px 100px;
+    align-items: center;
+    justify-content: center;
+
+}
+.teachers .col .row1{
+    width: 300px;
+    height: 350px;
+    padding: 20px 20px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.teachers .col .row1 .par p{
+    font-size: 1em;
+    text-transform: capitalize;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+.teachers .col .row1 .cols{
+    display: flex;
+    margin-top: 10px;
+    align-items: baseline;
+}
+.teachers .col .row1 .cols .icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+   background-color: var(--maincolor);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: white;
+   margin-top: 10px;
+
+}
+
+.teachers .col .row2{
+    width: 50vh ;
+    height: 100%;
+}
+.teachers .col .row2 img{
+    width: 100%;
+    height: auto;
+}
+
+
+/*********************contact**************************************/
+.con{
+    width: 100%;
+    height: 200vh;
+}
+.con .bann{
+    width: 50%;
+    margin: 10px auto;
+}
+.con .bann h1{
+    font-size: 3em;
+    color: black;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+.con .bann p{
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #9B9B9B;
+}
+.con .bann form{
+    margin-top: 30px;
+}
+.con .bann form  {
+    width: 100%;
+}
+.con .bann form .form-group input{
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 2px;
+    border: 1px solid #c3c5c9;
+    outline: none;
+    padding-left: 10px;
+}
+.con .bann form .form-grp {
+    display: flex;
+    flex-direction: row;
+    column-gap: 25px;
+    width: 100%;
+    height: auto;
+}
+.con .bann form .form-grp .from-groups input{
+    width: 325px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 2px;
+    border: 1px solid #c3c5c9;
+    outline: none;
+    padding-left: 10px;
+}
+.con .bann form .form-group textarea{
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 2px;
+    border: 1px solid #c3c5c9;
+    outline: none;
+}
+.con .bann form .form-group button{
+    width: 250px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: var(--maincolor);
+    font-weight: 500;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    color: white;
+    margin-top: 5px;
+}
+.con .bann form .form-group input::placeholder,.form-group textarea::placeholder,.form-grp input::placeholder{
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.con .bann2 {
+    margin: 100px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 50px;
+}
+.con .bann2 .col{
+    width: 400px;
+    margin-top: 20px;
+}
+.con .bann2 .col h4{
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.con .bann2 .col p{
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #9B9B9B;
+    line-height: 23px;
+}
+.con .bann2 #col2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.con .bann2 #col2 ul{
+    list-style: none;
+    margin-top: 15px;
+}
+.con .bann2 #col2 ul li{
+    padding-top: 10px;
+}
+.con .bann2  #col2 ul li a{
+    text-decoration: none;
+    color: var(--maincolor);
+    text-transform: capitalize;
+}
+.con .bann2 .col .form-groups{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    
+}
+.con .bann2 .col .form-group input{
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #9B9B9B;
+    outline: none;
+}
+.con .bann2 .col #subscribe input{
+    width: 120px;
+    height: 40px;
+    background-color: var(--maincolor);
+    font-weight: 500;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    color: white;
+    border: 1px solid #9B9B9B;
+    border-left: none;
+}
+.con .bann3 p{
+    text-align: center;
+    color: #9B9B9B;
+}
+.con .bann3 p a{
+    text-decoration: none;
+    color: var(--maincolor);
+    text-transform: capitalize;
+}
+
+
